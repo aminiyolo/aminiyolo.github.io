@@ -15,7 +15,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -66,7 +66,7 @@ header .logo span {
   color: #fff;
 }
 
-header .navbar a {
+header .navbar li {
   display: block;
   font-size: 2rem;
   color: #fff;
@@ -74,9 +74,15 @@ header .navbar a {
   text-decoration: none;
 }
 
-header .navbar a:hover {
+header .navbar .active {
   letter-spacing: 0.2rem;
   color: #ff8a3d;
+}
+
+header .navbar li:hover {
+  letter-spacing: 0.2rem;
+  color: #ff8a3d;
+  cursor: pointer;
 }
 
 header .git a {
@@ -86,7 +92,8 @@ header .git a {
 }
 
 header .git a:hover {
-  color: chartreuse;
+  color: #ff8a3d;
+  transform: scale(1.1);
 }
 
 section {
@@ -480,6 +487,55 @@ section {
 .portfolio .box__container .box .icons a:hover {
   background: #ff8a3d;
   color: #fff;
+}
+
+/* Contact */
+
+.contact .icons__container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.contact .icons__container .icons {
+  /* flex: 1 1; */
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.contact .icons__container .icons i {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2.5rem;
+  background: #ff8a3d;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.contact .icons__container .icons h3 {
+  color: #111;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+
+.contact .icons__container .icons p {
+  color: #666;
+  text-transform: lowercase;
+  font-size: 1.7rem;
+}
+
+.contact .icons__container .icons a {
+  text-decoration: none;
+}
+
+.contact .icons__container .icons .git:hover {
+  font-size: 3rem;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 991px) {
