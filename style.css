@@ -23,6 +23,8 @@ body {
   padding-left: 30rem;
 }
 
+/* Navbar */
+
 #menu-bars {
   position: fixed;
   top: 1rem;
@@ -101,6 +103,7 @@ section {
   min-height: 100vh;
 }
 
+/* Cursor */
 .cursor1 {
   position: absolute;
   top: 0px;
@@ -137,6 +140,8 @@ section {
 .cursor2.active {
   display: none;
 }
+
+/* Home */
 
 .home {
   display: flex;
@@ -532,10 +537,34 @@ section {
   text-decoration: none;
 }
 
+.contact .icons__container .icons .info {
+  font-size: 2.5rem;
+  text-transform: none;
+  color: #333;
+}
+
 .contact .icons__container .icons .git:hover {
   font-size: 3rem;
   transform: scale(1.2);
   cursor: pointer;
+}
+
+/* arrow 버튼 */
+
+.arrow__up {
+  position: fixed;
+  z-index: 10001;
+  bottom: 40px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  background-color: #ff8a3d;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out;
 }
 
 @media screen and (max-width: 991px) {
@@ -563,6 +592,11 @@ section {
   .cursor2 {
     display: none;
   }
+
+  .arrow__up.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -576,5 +610,10 @@ section {
 
   .experience .box__container .box {
     padding-right: 0;
+  }
+
+  .arrow__up.visible {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
