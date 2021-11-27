@@ -43,7 +43,6 @@ nav.addEventListener("click", (e) => {
   if (link === null) return;
   else {
     scrollIntoView(link);
-    // selectNavMenu(e.target);
   }
 });
 

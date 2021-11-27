@@ -229,11 +229,12 @@ section {
 
 .about .row__1 .image {
   flex: 1 1 25rem;
+  /* height: 70%; */
 }
 
 .about .row__1 .image img {
   height: 100%;
-  width: 100%;
+  width: 70%;
   object-fit: cover;
   border: 1rem solid #fff;
   border-radius: 0.5rem;
@@ -322,7 +323,7 @@ section {
 }
 
 .about .row__2 .skills .progress:nth-child(2) .bar span {
-  width: 75%;
+  width: 80%;
 }
 
 .about .row__2 .skills .progress:nth-child(3) .bar span {
@@ -478,13 +479,13 @@ section {
 
 .portfolio .box__container .box .icons a {
   display: block;
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 0.5rem;
   background: #eee;
   color: #333;
-  font-size: 1.7rem;
-  line-height: 4rem;
+  font-size: 2rem;
+  line-height: 5rem;
   text-align: center;
   margin-bottom: 1rem;
 }
